@@ -15,7 +15,7 @@
 }
 
 .custom-div-one {
-  background-color: #282c34;
+  background-color: #000000;
   color: white;
   padding: 10px;
   margin: 10px;
@@ -27,10 +27,28 @@
   justify-content: space-between;
 }
 
+.box {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  width: 100%;
+  height: 100px;
+  margin: 10px;
+}
+
+.keyboard-container {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  width:fit-content;
+  padding: 10px; 
+  margin: 10px;
+}
+
+
 .red-div {
   background-color: red;
   color: white;
-  padding: 10px;
+  padding: 10px; 
   margin: 10px;
 }
 
