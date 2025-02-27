@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { KeyboardComponent } from "./KeyboardComponent";
 
 export const SampleInputFormWithFunction: React.FC = () => {
   const [inputValue, setInputValue] = useState("");
@@ -35,7 +36,8 @@ export const SampleInputFormWithFunction: React.FC = () => {
         >
           To Lower
         </button>
-      </div>
+    </div>
+<KeyboardComponent />
     </div>
   );
 };
