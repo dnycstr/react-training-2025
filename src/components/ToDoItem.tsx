@@ -23,7 +23,7 @@ export const ToDoItem: React.FC<ToDoItemProps> = ({
             ? "todo-item-complete"
             : isOverdue
             ? "todo-item-overdue"
-            : "todo-item-open"
+            : "todo-item-open"  
         }
         onClick={() => {
           onComplete(id);

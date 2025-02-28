@@ -158,3 +158,12 @@
 .todo-open {
   text-decoration: line-through;
 }
+.todosummary-container {
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  width: 450px;
+  padding: 10px;
+  margin: 10px;
+}
