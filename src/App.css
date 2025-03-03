@@ -140,7 +140,7 @@
   color: rgb(255, 255, 255);
   width: 20px;
   height: 20px;
-  border-radius: 50%;
+  border-radius: 50%; 
 }
 
 .todo-item-overdue {
@@ -166,4 +166,27 @@
   width: 450px;
   padding: 10px;
   margin: 10px;
+}
+
+.circle {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 10px;
+  color: rgb(0, 0, 0); 
+}
+
+.done {
+  background-color: green;
+}
+
+.pending {
+  background-color: gray;
+}
+
+.overdue {
+  background-color: red;
 }

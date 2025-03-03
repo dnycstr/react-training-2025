@@ -56,7 +56,7 @@ export const ToDoApplication = () => {
 
 
   return (
-    <div>
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
       <h1>ToDo Application</h1>
       <HDiv>
         <ToDoInputForm
