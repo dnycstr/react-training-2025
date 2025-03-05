@@ -39,16 +39,15 @@
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-weight: 400;
-  width:fit-content;
-  padding: 10px; 
+  width: fit-content;
+  padding: 10px;
   margin: 10px;
 }
-
 
 .red-div {
   background-color: red;
   color: white;
-  padding: 10px; 
+  padding: 10px;
   margin: 10px;
 }
 
@@ -101,6 +100,210 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.todo-container {
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 450px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.todo-item-container {
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+}
+
+.todo-item-open {
+  background-color: rgb(88, 83, 83);
+  color: rgb(0, 0, 0);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.todo-item-complete {
+  background-color: rgb(16, 173, 45);
+  color: rgb(255, 255, 255);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.todo-item-overdue {
+  background-color: rgb(196, 58, 20);
+  color: rgb(255, 255, 255);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.todo-complete {
+  text-decoration: line-through;
+}
+
+.todo-open {
+  text-decoration: line-through;
+}
+.todosummary-container {
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  width: 450px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.circle {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.done {
+  background-color: green;
+}
+
+.pending {
+  background-color: gray;
+}
+
+.overdue {
+  background-color: red;
+}
+
+.todo-container {
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 450px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.todo-item-container {
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+}
+
+.todo-item-open {
+  background-color: rgb(88, 83, 83);
+  color: rgb(0, 0, 0);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.todo-item-complete {
+  background-color: rgb(16, 173, 45);
+  color: rgb(255, 255, 255);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.todo-item-overdue {
+  background-color: rgb(196, 58, 20);
+  color: rgb(255, 255, 255);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.todo-complete {
+  text-decoration: line-through;
+}
+
+.todo-open {
+  text-decoration: line-through;
+}
+.todosummary-container {
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  width: 450px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.circle {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.done {
+  background-color: green;
+}
+
+.pending {
+  background-color: gray;
+}
+
+.overdue {
+  background-color: red;
+}
+
+.button-calc {
+  width: 60px;
+  height: 60px;
+  background-color: #9c9c9c;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s ease-in-out;
+}
+
+.button-calc:hover {
+  background-color: #666;
+}
+
+.button-calc-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px;
 }
 
 .button-calc {
