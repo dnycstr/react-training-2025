@@ -102,3 +102,29 @@
     transform: rotate(360deg);
   }
 }
+
+.button-calc {
+  width: 60px;
+  height: 60px;
+  background-color: #9c9c9c;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s ease-in-out;
+}
+
+.button-calc:hover {
+  background-color: #666;
+}
+
+.button-calc-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px;
+}
