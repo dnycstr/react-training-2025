@@ -1,10 +1,10 @@
 import "./App.css";
-import { PersonalInformationForm } from "./parenttsx/PersonalInformationForm";
+import { Organization } from "./parenttsx/Organization";
 
 function App() {
   return (
     <div>
-      <PersonalInformationForm />
+      <Organization />
     </div>
   );
 }
