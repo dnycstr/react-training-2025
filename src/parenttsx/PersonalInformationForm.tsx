@@ -5,6 +5,8 @@ interface PersonModel {
   lastName: string;
   email: string;
   address: string;
+  gender: string;
+  Mnumber: string;
 }
 
 const initialPerson: PersonModel = {
@@ -12,6 +14,8 @@ const initialPerson: PersonModel = {
   lastName: "",
   email: "",
   address: "",
+  gender: "",
+  Mnumber:"",
 };
 
 export const PersonalInformationForm = () => {
@@ -61,6 +65,47 @@ export const PersonalInformationForm = () => {
           value={person.address}
           onChange={(e) => {
             let currentPerson = { ...person, address: e.target.value };
+            setPerson(currentPerson);
+          }}
+        />
+      </div>
+      <div>
+        <span>Gender: </span>
+        <input
+        type="radio"
+        name="gender"
+        value="male"
+        checked={person.gender === "male"}
+        onChange={(e) => {
+          let currentPerson = { ...person, gender: e.target.value };
+          setPerson(currentPerson);
+        }}/> Male
+      <input
+        type="radio"
+        name="gender"
+        value="female"
+        checked={person.gender === "female"}
+        onChange={(e) => {
+          let currentPerson = { ...person, gender: e.target.value };
+          setPerson(currentPerson);
+        }}/> Female
+      <input
+        type="radio"
+        name="gender"
+        value="other"
+        checked={person.gender === "other"}
+        onChange={(e) => {
+          let currentPerson = { ...person, gender: e.target.value };
+          setPerson(currentPerson);
+        }}/> Other
+    </div>
+    <div>
+        <span>Mobile Number: </span>
+        <input
+          type="string"
+          value={person.Mnumber}
+          onChange={(e) => {
+            let currentPerson = { ...person, Mnumber: e.target.value };
             setPerson(currentPerson);
           }}
         />
