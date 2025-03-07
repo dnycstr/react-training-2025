@@ -33,13 +33,13 @@ export const OrganizationListView = () => {
       >
         Refresh
       </button>
-      <ul>
+      <ul style={{ columns: 3, lineHeight: "0.5" }}>
         {organizations.map((organization) => (
           <li key={organization.id}>
-            <h2>
+            <h2 style={{ color: "blue", fontSize: "15px"}}>
               {organization.id} {organization.name}
             </h2>
-            <p>{organization.description}</p>
+            <p style={{fontSize: "10px" }}>{organization.description}</p>
           </li>
         ))}
       </ul>

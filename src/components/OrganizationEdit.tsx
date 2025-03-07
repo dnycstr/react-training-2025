@@ -9,12 +9,12 @@ export const OrganizationEdit = () => {
     description: "",
   });
   return (
-    <div>
+    <div style={{ border: "3px solid", padding: "10px", borderColor: "blue"}}>
       <div>
         <h2>Edit Organization</h2>
       </div>
       <div>
-        <span> ID</span>
+        <span>ID: </span>
         <input
           type="text"
           value={searchId}
@@ -23,7 +23,7 @@ export const OrganizationEdit = () => {
           }}
         />
         <button
-          type="button"
+          type="button" style={{ backgroundColor: "blue", color: "white"}}
           onClick={() => {
             fetch(`https://localhost:7034/api/organizations/${searchId}`, {
               method: "GET",
@@ -38,7 +38,7 @@ export const OrganizationEdit = () => {
         </button>
       </div>
       <div>
-        <span>Name</span>
+        <span>Name: </span>
         <input
           type="text"
           value={newOrganization.name}
@@ -48,7 +48,7 @@ export const OrganizationEdit = () => {
         />
       </div>
       <div>
-        <span>Description</span>
+        <span>Description: </span>
         <input
           type="text"
           value={newOrganization.description}
@@ -60,8 +60,9 @@ export const OrganizationEdit = () => {
           }}
         />
       </div>
+      <div style={{ display: "flex", justifyContent: "center", marginTop: "10px" }}>
       <button
-        type="button"
+        type="button" style={{ backgroundColor: "blue", color: "white"}}
         onClick={() => {
           fetch(`https://localhost:7034/api/organizations/${searchId}`, {
             method: "PUT",
@@ -80,7 +81,7 @@ export const OrganizationEdit = () => {
       >
         Edit
       </button>
-    </div>
+    </div></div>
   );
 };
 

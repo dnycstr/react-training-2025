@@ -1,4 +1,5 @@
 import { OrganizationCreate } from "../components/OrganizationCreate";
+import { OrganizationDelete } from "../components/OrganizationDelete";
 import { OrganizationEdit } from "../components/OrganizationEdit";
 import { OrganizationListView } from "../components/OrganizationListView";
 
@@ -12,16 +13,14 @@ export const Organization = () => {
   return (
     <div>
       <h1>Organization</h1>
-      <div>
+      <div style = {{margin: "10px 0px", border: "3px solid", padding: "10px"}}>
         <OrganizationListView />
       </div>
-      <hr />
-      <div>
+      
+      <div style = {{margin: "10px 0px", border: "3px solid", padding: "10px", display: "flex", justifyContent: "space-between"}}>
         <OrganizationCreate />
-      </div>
-      <hr />
-      <div>
         <OrganizationEdit />
+        <OrganizationDelete />
       </div>
     </div>
   );
