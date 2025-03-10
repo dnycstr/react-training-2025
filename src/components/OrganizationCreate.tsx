@@ -8,7 +8,7 @@ export const OrganizationCreate = () => {
     description: "",
   });
   return (
-    <div style={{ border: "3px solid", padding: "10px", borderColor: "blue"}}>
+    <div style={{ border: "3px solid", padding: "10px", borderColor: "blue" }}>
       <div>
         <h2>Create Organization</h2>
       </div>
@@ -34,29 +34,33 @@ export const OrganizationCreate = () => {
             });
           }}
         />
-        </div>
-      <div style={{ display: "flex", justifyContent: "center", marginTop: "10px" }}>
-      <button
-        type="button" style={{ backgroundColor: "blue", color: "white"}}
-        onClick={() => {
-          fetch("https://localhost:7034/api/organizations", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(newOrganization),
-          }).then((response) => {
-            if (response.ok) {
-              alert("Organization created successfully");
-            } else {
-              alert("Organization creation failed");
-            }
-          });
-        }}
+      </div>
+      <div
+        style={{ display: "flex", justifyContent: "center", marginTop: "10px" }}
       >
-        Create
-      </button>
-    </div></div>
+        <button
+          type="button"
+          style={{ backgroundColor: "blue", color: "white" }}
+          onClick={() => {
+            fetch("https://localhost:7034/api/organizations", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(newOrganization),
+            }).then((response) => {
+              if (response.ok) {
+                alert("Organization created successfully");
+              } else {
+                alert("Organization creation failed");
+              }
+            });
+          }}
+        >
+          Create
+        </button>
+      </div>
+    </div>
   );
 };
 
